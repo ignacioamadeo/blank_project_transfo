@@ -5,36 +5,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Este título es el que se ve en la pestaña de la página: -->
-    <title>My project</title>
+    <title>TransForLeaders</title>
 </head>
 
 <!-- Agrego link a CSS con estilos: -->
 <link rel="stylesheet" type="text/css" href="./public/css/styles.css" />
+<link rel="stylesheet" type="text/css" href="./public/css/fonts.css" />
+
 
 <body>
 
-    <!-- Barra de navegación típica arriba: -->
-    <nav>
-        <header>
-            <h1> h1 es un elemento de html</h1>
+    <!-- Top header bar: -->
+    <nav class="header">
+        <header class="header-container">
+            <a href="#" class="nav-logo">
+                <img src="./public/images/transfo-logo-header-desktop.png" alt="transfo logo">
+            </a>
+            <!-- <div class="nav-tab">
+                <a href="#" class="nav-item active">+</a>
+                <a href="#" class="nav-item">+</a>
+                <a href="#" class="nav-item">+/a>
+            </div> -->
+            <div class="nav-login">
+                <img src="./public/icons/user-gear.svg" alt="User">
+                <!-- <p>Welcome back <span class="username">Ignacio</span></p>
+                <a href="#" class="login-link">Logout</a> -->
+            </div>
         </header>
     </nav>
 
     <!--Cuerpo de página: -->
     <main>
-        <div>
-            <p>La mayoría de los elementos tienen el mismo comportamiento, por eso se dice que son convenciones. Este texto podría estar dentro de un div</p>
-            <img src="./public/images/image.png" alt="An image" class="cuerpo_imagen-principal" id="imagenPrincipal">
-        </div>
+        <!-- Side bar menu: -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <p>Menu</p>
+            </div>
+            <div class="sidebar-menu">
+                <a href="#" class="sidebar-menu-icons">
+                    <img src="./public/icons/message-bot.svg" alt="Bot">
+                    <span class="sidebar-menu-hover" id="hoverHelpDialog">Coach virtual</span>
+                </a>
+                <a href="#" class="sidebar-menu-icons">
+                    <img src="./public/icons/bullseye-arrow.svg" alt="Objectives">
+                    <span class="sidebar-menu-hover">Objetivos</span>
+                </a>
+                <a href="#" class="sidebar-menu-icons">
+                    <img src="./public/icons/puzzle-alt.svg" alt="Functions">
+                    <span class="sidebar-menu-hover">Funciones</span>
+                </a>
+                <a href="#" class="sidebar-menu-icons">
+                    <img src="./public/icons/ballot-check.svg" alt="Roles">
+                    <span class="sidebar-menu-hover">Roles</span>
+                </a>
+                <a href="#" class="sidebar-menu-icons">
+                    <img src="./public/icons/users.svg" alt="People HR">
+                    <span class="sidebar-menu-hover">Personas</span>
+                </a>
+                <a href="#" class="sidebar-menu-icons">
+                    <img src="./public/icons/chart-tree.svg" alt="User">
+                    <span class="sidebar-menu-hover">Procesos</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main canvas: -->
+        <section class="main-canvas">
+            <div class="main-canvas-pdf-viewer">
+                <!-- <embed src="./path/to/your/pdf/document.pdf" type="application/pdf" width="100%" height="600px" /> -->
+            </div>
+        </section>
+
     </main>
 
-    <!--Pie de página típico: -->
+    <!--Simple footer: -->
     <footer>
-            <div class="footer_contenedor-texto">
-                <p>Div es el elemento mas usado, un markup tradicionalmente tiene un id y una clase para individualizarlo</p>
-            </div>
+        <div class="footer_contenedor-links">
+            <a href="#" class="footer-menu-links">
+                <span>Guía de uso de plataforma</span>
+            </a>
+            <a href="#" class="footer-menu-links">
+                <span>Reportar errores</span>
+            </a>
+            <a href="#" class="footer-menu-links">
+                <span>Aportar ideas</span>
+            </a>
+            <a href="#" class="footer-menu-links">
+                <span>Quienes somos</span>
+            </a>
+        </div>
+        <div class="footer-logo">
+            <img src="./public/images/transfo-logo-footer-desktop.png" alt="transfo logo">
+        </div>
+
     </footer>
+    <script src="./public/js/sidebarHoverHelp.js"></script>
+
 </body>
 
 </html>
